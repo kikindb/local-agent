@@ -22,3 +22,8 @@ uv run python src/research-agent.py
 The model defaults to `mlx-community/Qwen3.5-4B-MLX-4bit` at
 `http://127.0.0.1:8080/v1`. Override these defaults with `LLM_MODEL`,
 `LLM_BASE_URL`, and `LLM_API_KEY`.
+
+Each completed query is also saved as Markdown under `.research/`. Filenames
+continue the existing numbered-slug convention and include the research date,
+for example `003-python-release-2026-10-05.md`. Reports contain the findings
+and a Sources section populated from web-search results and cited links.
